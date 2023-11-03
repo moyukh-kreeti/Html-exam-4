@@ -1,0 +1,348 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  src: url(MYRIADPRO-REGULAR.OTF);
+  font-family: Myriad Pro;
+}
+html{
+  font-size: clamp(0.5rem,1vw,1rem);
+  --primary-text-color: rgb(106,106,106);
+}
+body{
+  font-family: Myriad Pro;
+}
+.logo-img{
+  width: 20%;
+}
+.informations__icon{
+  background-color: #1a9bdc;
+  color: #ffff;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius:50%
+}
+.info{
+  color: var(--primary-text-color);
+  justify-content: center;
+}
+.info__heading{
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.nav-item--custom{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+.nav-item--custom:hover{
+  color: black;
+}
+.banner{
+  position: relative;
+}
+.banner__img{
+  width: 100%;
+}
+.banner__content{
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: fit-content;
+  border-radius: 30px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.banner__heading{
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 800;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.banner__para{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.banner__btn{
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffff;
+  width: fit-content;
+  text-align: center;
+  padding: 10px 25px;
+  background-color: #1a9bdc;
+  border-radius: 25px;
+  border: transparent;
+}
+.services{
+  background-color: rgb(0,184,148);
+}
+.services__content__heading{
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.services__content__para{
+  font-size: 1rem;
+}
+.services__content__icon{
+  padding: 1rem;
+    background-color: white;
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog__heading{
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: black;
+}
+.blog__para{
+  font-size: 1.1rem;
+  color: var(--primary-text-color)
+}
+.blog__professional-icon{
+  background-color: rgb(26,155,220);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog__professional__heading{
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.blog__professional__text{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.promotion{
+  background-color: rgb(0,135,190);
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.promotions__heading{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.promotions__text{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+
+
+@media (max-width: 767px) {
+  .logo-img{
+    width: 50%;
+  }
+  .informations{
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .informations li{
+    flex-direction: column;
+  }
+  .banner{
+    min-height: 20vh;
+  }
+  .banner__content{
+    padding: 1rem 1rem;
+    top: 1%;
+  }
+  .banner__heading{
+    font-size: 1.8rem;
+  }
+  .banner__para{
+    font-size: 1rem;
+  }
+  .banner__btn{
+    font-size: 1rem;
+    padding: 5px 12px;
+  }
+  .professional_fig{
+    width: fit-content;
+    height: calc(200px + 10vw);
+  }
+  .promotions__text{
+    font-size: 2rem;
+  }
+}
+
+footer{
+  background-color: rgb(23,23,23);
+}
+.footer-top{
+  padding-top: 5rem;
+}
+.footer-top__get-in-touch__heading{
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.footer-top__get-in-touch__list__items__icon{
+  height: 2rem;
+  width: 2rem;
+}
+.footer-top__get-in-touch__list__items__address__heading{
+    color: white;
+}
+.footer-top__get-in-touch__list{
+  margin-top: 2rem;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+
+}
+
+.footer-top__quick-link__list{
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+.footer-top__quick-link__heading{
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.footer-top__quick-link__container{
+  display: flex;
+  margin-top: 2rem;
+}
+.footer-top__quick-link__container__list{
+  color: var(--primary-text-color);
+  width: fit-content;
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-top__quick-link__container__list__items a{
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.footer-top__quick-link__container__list__items span{
+  margin-right: 1rem;
+}
+.footer-top__quick-link__container__list__items a:hover{
+  color: blue;
+}
+.footer-top__our-services__list{
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+.footer-top__our-services__heading{
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.footer-top__our-services__container{
+  display: flex;
+  margin-top: 2rem;
+}
+.footer-top__our-services__container__list{
+  color: var(--primary-text-color);
+  width: fit-content;
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-top__our-services__container__list__items a{
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.footer-top__our-services__container__list__items span{
+  margin-right: 1rem;
+}
+.footer-top__our-services__container__list__items a:hover{
+  color: blue;
+}
+.contact-us{
+  margin-top: 5rem;
+  padding-top: 2rem;
+}
+.contact-us__form-container__heading{
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-left: auto;
+  color: white;
+  margin-right: auto;
+}
+.contact-us__form-container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.contact-us__form-container__form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-us__form-container__form__input{
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.contact-us__form-container__form__submit{
+  background-color: rgb(26,155,220);;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: white;
+  margin: auto;
+  width: 70%;
+  padding: 1rem;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner{
+    min-height: 46vh;
+  }
+  .banner__content{
+    padding: 1.5rem 1rem;
+    top: 3%;
+    left: 2%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner__content{
+    padding: 1.5rem 1rem;
+    top: 3%;
+    left: 2%;
+  }
+
+  .logo-in-banner{
+    width: 100px;
+    position: absolute;
+    top: 84%;
+    left: 46%;
+  }
+}
